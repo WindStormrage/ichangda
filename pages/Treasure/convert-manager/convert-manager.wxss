@@ -1,0 +1,42 @@
+page {
+  background-color: #b4eefa;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 40%;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.your {
+  font-size: 36rpx;
+}
+
+.redeem-code {
+  font-size: 56rpx;
+  background-color: #fff;
+  border-radius: 25rpx;
+  height: 100%;
+  width: 600rpx;
+  margin-top: 40rpx;
+  margin-left: 20px;
+}
+
+.btn-area {
+  display: flex;
+  flex-direction: column;
+  height: 200rpx;
+  width: 100%;
+  margin-top: 55rpx;
+}
+
+.btn-area button {
+  font-size: 32rpx;
+  height: 80rpx;
+  width: 40%;
+}

@@ -1,0 +1,89 @@
+.shine{
+    height: 1206rpx;
+    widows: 100%;
+    animation-name:bgc;
+    animation-delay: 0.2s;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+@keyframes bgc {
+    from{
+        background-color:  #FF0000;
+    }
+    10%{
+        background-color: #000;
+    }
+    20%{
+        background-color: #FFFF00;
+    }
+    30%{
+        background-color: #000;
+    }
+    40%{
+        background-color: #00FF00;
+    }
+    50%{
+        background-color: #000;
+    }
+    60%{
+        background-color: #00FFFF;
+    }
+    70%{
+        background-color: #000;
+    }
+    80%{
+        background-color: #0000FF;
+    }
+    90%{
+        background-color: #000;
+    }
+    to{
+        background-color: #8B00FF;
+    }
+}
+.page{
+    margin: 0;
+    padding: 0;
+    height: 1206rpx;
+    width: 100%;
+    background-color:  #46a3ff;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+.luck{
+  margin-top: -30rpx;
+  color: #FFFF00;
+  background-color: #46a3ff;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 60rpx;
+}
+.luck-msg{
+  margin-top: 20rpx;
+  text-align: center;
+  font-size: 30rpx;
+  color: #fff;
+  font-weight: bold;
+}
+.done{
+    color: #FFF000;
+    background-color: #46a3ff;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 60rpx;
+}
+.button{
+  position: absolute;
+  bottom: 0rpx;
+  right: 0rpx;
+  height: 160rpx;
+  width: 160rpx;
+  border-color:#46a3ff;
+  background-color: transparent;
+}
+button::after {
+  border: 0;
+} 

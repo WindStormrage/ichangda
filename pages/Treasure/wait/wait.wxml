@@ -1,0 +1,10 @@
+<view class="page">
+  <image src='../../../images/bg.png'></image>
+  <view class='name'>微 寻 者</view>
+  <view class='tip'>你等待的时间不多了...</view>
+  <view class='time'>
+    <view>{{date.d}}</view>:<view>{{date.h}}</view>:<view>{{date.m}}</view>:<view>{{date.s}}</view>
+  </view>
+  <view class='ad'>{{year}}/{{moon}}/{{day}} {{h}}:{{m}}:{{s}} COMING SOON</view>
+  <view class='foot'>CCSU</view>
+</view>

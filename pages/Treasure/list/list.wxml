@@ -1,0 +1,29 @@
+<view class='container'>
+  <block wx:for="{{data}}" wx:for-item="clue" wx:for-index="cdx">
+    <view class='c-container' style="background:{{container_color[cdx].background}}"  bindtap='culeDetail'  data-id='{{cdx}}'>
+      <view class='left'>
+        <view class="c-img">
+          <view wx:if="{{clue.content != null}}" class='circle' style="background:{{container_color[cdx].mmbackground}}">
+            <image src='/images/comment.png' class='c-img-img'></image>
+          </view>
+          <view wx:if="{{clue.music != null}}" class='circle' style="background:{{container_color[cdx].mmbackground}}">
+            <image src='/images/remind.png' class='c-img-img'></image>
+          </view>
+          <view wx:if="{{clue.photo != null}}" class='circle' style="background:{{container_color[cdx].mmbackground}}">
+            <image src='/images/pic.png' class='c-img-img'></image>
+          </view>
+        </view>
+        <view class='c-text'>
+          <text>线索 {{cdx+1}}</text>
+        </view>
+      </view>
+      <image src='/images/mine.png' class='mine'></image>
+    </view>
+  </block>
+</view>
+<view class="not" wx:if="{{data.length == 0}}">
+  <image src='./../../../images/notfound.png'></image>
+  <text class="wa">震惊了，您居然没获得到线索</text>
+  <view class="line"></view>
+</view>
+<text class="msg">您也可以通过朋友的线索去寻找宝藏</text>

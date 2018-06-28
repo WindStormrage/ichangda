@@ -1,0 +1,110 @@
+page{
+    background-color: #fff;
+}
+.swiper-tab{
+    width: 100%;
+    border-bottom: 2rpx solid #F8F8F8;
+    text-align: center;
+    line-height: 80rpx;
+
+}
+.swiper-tab-list{
+    font-size: 30rpx;
+    display: inline-block;
+    width: 33.33%;
+    color: #3C8CAD;
+}
+.on{
+    color: #3C8CAD;
+    border-bottom: 5rpx solid #3C8CAD;
+}
+
+.swiper-box{
+    display: block;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.swiper-box view{
+    text-align: center;
+}
+
+
+swiper{
+    margin-top: 20rpx;
+}
+
+.page3-title{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 4rpx solid #D2D2D2;
+}
+.page3-title .text{
+    width: 73%;
+    color: #3C8CAD;
+    border-right: 4rpx solid #D2D2D2;
+    font-size: 50rpx;
+    padding-top: 10rpx;
+    padding-bottom: 10rpx;
+    font-family:"黑体";
+}
+.page3-title .state{
+    width: 27%;
+}
+
+
+.page3-content{
+    display: flex;
+    justify-content: space-between;
+}
+.page3-left{
+    float: left;
+    width: 73%;
+/*     height: 600rpx;
+border-right: 4rpx solid #D2D2D2; */
+}
+.page3-right{
+    float: right;
+    width: 27%;
+}
+.page3-content1{
+    height: 70rpx;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 4rpx solid #D2D2D2;
+}
+.page3-content2{
+    height: 70rpx;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 4rpx solid #D2D2D2;
+}
+.page3-content1 .text{
+    width: 100%;
+    line-height: 50rpx;
+    color: #3C8CAD;
+    border-right: 4rpx solid #D2D2D2;
+    text-decoration: underline;
+    padding-top: 10rpx;
+    padding-bottom: 10rpx;
+    font-family:"黑体";
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.page3-content2 .state{
+    text-align: center;
+    line-height: 70rpx;
+    width: 100%;
+}
+.uploadfile{
+    width: 100rpx;
+    height: 100rpx;
+    margin-top: 20rpx;
+    margin-left: 20rpx;
+    margin-bottom: 20rpx;
+}
+.submit_btn{
+    margin-top: 50rpx;
+    width: 400rpx;
+}

@@ -1,0 +1,144 @@
+.swiper-tab {
+  width: 100%;
+  border-bottom: 2rpx solid #fff;
+  text-align: center;
+  line-height: 80rpx;
+}
+
+.swiper-tab-list {
+  font-size: 30rpx;
+  display: inline-block;
+  width: 50%;
+  color: #008fe5;
+}
+
+.on {
+  color: #008fe5;
+  border-bottom: 5rpx solid #008fe5;
+}
+
+.swiper-box {
+  display: block;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.swiper-box view {
+  text-align: center;
+}
+
+.add {
+  height: 120rpx;
+  width: 120rpx;
+  border: 1rpx solid #fedc00;
+  border-radius: 60rpx;
+  background-color: #fedc00;
+  z-index: 1;
+  position: fixed;
+  bottom: 85rpx;
+  right: 84rpx;
+}
+
+.choose {
+  margin-top: 10rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.page1 .choose .btn {
+  height: 68rpx;
+  width: 150rpx;
+  border: 1rpx solid #1296db;
+  border-radius: 5rpx;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  line-height: 68rpx;
+  display: inline-block;
+}
+
+.pressed {
+  background-color: #1296db;
+  color: #fff;
+}
+
+.normal {
+  background-color: #f8f8f8;
+  color: #1296db;
+}
+
+.page1 .choose .btn:nth-child(4n+1) {
+  margin-left: 0rpx;
+}
+
+.page1 .content {
+  margin-top: 40rpx;
+  margin-left: 25rpx;
+  margin-right: 25rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.page1 .content .card {
+  height: 330rpx;
+  width: 330rpx;
+  border-radius: 5rpx;
+  background-color: #fff;
+  background-size: 330rpx 223rpx;
+  background-repeat: no-repeat;
+  margin-top: 30rpx;
+  box-shadow: 0rpx 0rpx 5rpx #666;
+  position: relative;
+  overflow: hidden;
+}
+
+.page1 .content .card .mes {
+  width: 100%;
+  height: 80rpx;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 15rpx 0 15rpx 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  line-height: 35rpx;
+  text-align: left;
+  color: white;
+}
+
+.page1 .content .card .mes .name {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  padding-left: 25rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #1296db;
+}
+
+.page1 .content .card .mes .date {
+  display: inline-block;
+  float: right;
+  padding-right: 25rpx;
+  color: #747474;
+}
+
+.page1 .content .card .mes .description {
+  width: 90%;
+  line-height: 20px;
+  max-height: 40px;
+  float: left;
+  padding-left: 20rpx;
+  padding-right: 10rpx;
+  padding-top: 15rpx;
+  text-align: left;
+  color: #747474;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

@@ -1,0 +1,15 @@
+<import src="../save-template/save-template.wxml" />
+<view class='head'>
+  <view class='headText'>我的分组</view>
+  <view catchtap='setting' class='settingText'>{{setting?"查看":"管理"}}</view>
+  <image class='settingImg' src='../../../../images/more.png'></image>
+</view>
+<view class="line"></view>
+<view wx:for="{{groups}}" wx:for-item="group" wx:for-index="groupIndex" wx:key="id" class='seek'>
+  <view>
+    <template is="saveTemplate" data="{{group,setting,showModalStatus,animationData,isAdd}}" />
+  </view>
+</view>
+<view>
+  <image class='showClass' catchtap='seek' src='../../../../images/+.png'></image>
+</view>

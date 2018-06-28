@@ -1,0 +1,133 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.6.6",
+	"appid": "wxdc17767d27f31cae",
+	"projectname": "icd",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "线索列表",
+					"pathName": "pages/Treasure/list/list",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "wode",
+					"pathName": "pages/Treasure/me/me",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "me",
+					"pathName": "pages/Treasure/me/me",
+					"query": ""
+				},
+				{
+					"id": 10,
+					"name": "点歌台",
+					"pathName": "pages/manage/music/content/content",
+					"query": ""
+				},
+				{
+					"id": 4,
+					"name": "课表",
+					"pathName": "pages/service/classTable/classTable",
+					"query": "weekth=3"
+				},
+				{
+					"id": 5,
+					"name": "end",
+					"pathName": "pages/Treasure/end/end",
+					"query": ""
+				},
+				{
+					"id": 6,
+					"name": "convert",
+					"pathName": "pages/Treasure/convert/convert",
+					"query": ""
+				},
+				{
+					"id": 7,
+					"name": "answer",
+					"pathName": "pages/Treasure/answer/answer",
+					"query": "openid=oyP0Z0Tu3fd87kexrkazj3I1p9zo"
+				},
+				{
+					"id": 8,
+					"name": "兑奖",
+					"pathName": "pages/Treasure/convert/convert",
+					"query": "openid=oyP0Z0Tu3fd87kexrkazj3I1p9zo"
+				},
+				{
+					"id": -1,
+					"name": "列表",
+					"pathName": "pages/Treasure/list2/list2",
+					"query": "openid=oyP0Z0Tu3fd87kexrkazj3I1p9zo"
+				},
+				{
+					"id": -1,
+					"name": "线索列表",
+					"pathName": "pages/Treasure/content/content",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "rule",
+					"pathName": "pages/Treasure/rule/rule",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "want-collect",
+					"pathName": "pages/Treasure/want-collect/want-collect",
+					"query": ""
+				},
+				{
+					"id": 13,
+					"name": "convert-manager",
+					"pathName": "pages/Treasure/convert-manager/convert-manager",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "list",
+					"pathName": "pages/Treasure/list/list",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "content",
+					"pathName": "pages/Treasure/content/content",
+					"query": ""
+				}
+			]
+		}
+	}
+}

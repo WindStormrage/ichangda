@@ -1,0 +1,132 @@
+/* header */
+.text{
+  margin-top:-20rpx; 
+}
+.page{
+    margin-bottom: 0rpx;
+}
+text{
+    font-family: "Microsoft Yahei";
+    text-align:center;
+    display: block;
+}
+.page{
+    background-color: #FFFFFF;
+}
+.header{
+    padding-top: 15rpx;
+    padding-bottom: 20rpx;
+}
+.header-title{
+    display: block;
+    text-align: center;
+    font-size: 45rpx;
+    color: #000;
+}
+.header-choose{
+    line-height: 10rpx;
+    margin-top: 15rpx;
+}
+/* choose */
+.choose{
+    display: flex;
+    justify-content: center;
+}
+.choose-all{
+    background: #98CCFB;
+    margin-right: 20rpx;
+    /* margin: 0rpx 10rpx 0rpx 20rpx; //左右留位置 */
+    width: 80rpx;
+    height: 80rpx;
+    display: inline-block;/* //行元素 */
+    border:1rpx solid #98CCFB;/* //为了圆角 */
+    border-radius: 15rpx;/* //圆角 */
+}
+.choose-all-text{
+    display: block;
+    text-align: center;
+    font-size: 30rpx;
+    line-height: 40rpx;
+}
+.scroll-view{
+    width: 594rpx;
+    height: 90rpx;
+    white-space: nowrap;/* 文本不换行 */
+    display: flex;
+    overflow: scroll;/* 超过部分用滚动条，不写的话有的机子会出现问题！ */
+}
+.choose-scroll{
+    width: 80rpx;/* //圆形的高宽 */
+    height: 80rpx;
+    display: inline-block;/* //行内块元素 */
+    border:1rpx solid #C4DFFC;/* //为圆角 */
+    border-radius: 80rpx;/* //圆角 */
+    margin-left: 20rpx;
+    /* margin: 0rpx 8rpx 0rpx 8rpx;//每个圆形距离 */
+}
+.choose-scroll-text{
+    display: block;
+    line-height:80rpx;
+    text-align: center;
+}
+/* table */
+.table{
+    margin-top: 20rpx;
+}
+.tr{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+.tr:last-child{
+    margin-bottom: 30rpx;
+}
+.td{
+    padding: 5rpx 4rpx 5rpx 4rpx;
+    display: inline-block;
+    width: 94rpx;
+}
+.null-td{
+    height: 70rpx;
+    border:1rpx solid #96DDF6;
+    background-color: #96DDF6;
+}
+.week-td{
+    height: 70rpx;
+    border:1rpx solid #96DDF6;
+    background-color: #96DDF6;
+}
+.day-td{
+    min-height: 150rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:1rpx solid #96DDF6;
+    background-color: #96DDF6;
+}
+.data-td{
+    min-height: 150rpx;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-color: #B5E7F9;
+    border:1rpx solid #B5E7F9;
+}
+.day-td text{
+    white-space:nowrap;
+}
+.data-td view{
+  min-height: 150rpx;
+    font-family: "Microsoft Yahei";
+    text-align:center;
+    display: block;
+    padding-top: 10rpx;
+    word-wrap:break-word;/* 强制换行 */
+    word-break:break-all;
+    overflow: hidden;
+    font-size: 25rpx;
+    line-height: 25rpx;
+    background-color:#E8F8FD;
+    border-radius: 8rpx;
+    padding-bottom: 5rpx;
+}

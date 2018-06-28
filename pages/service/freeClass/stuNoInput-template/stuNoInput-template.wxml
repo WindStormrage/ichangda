@@ -1,0 +1,6 @@
+<template name="stuNoInputTemplate">
+  <view class='input-container'>
+    <text class='input_no'>{{index+1}}</text>
+    <input type='text' placeholder='学号' placeholder-class='placeholder' value='' name="stuNo{{index}}"></input>
+  </view>
+</template>

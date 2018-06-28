@@ -1,0 +1,84 @@
+<!--index.wxml-->
+<view class="flex_row">
+  <view class="flex_row__icon"></view>
+  <view class="flex_row__title">今日课表</view>
+  <view wx:if="{{selected==false}}" class="flex_row_right" bindtap="onClickWeekDay">{{date}}{{emptyStr}}{{weekth}}{{emptyStr}}{{weekday}}</view>
+  <view wx:else class="flex_row_right" bindtap="onClickWeekDay" style="background:#1296db;color:#fff">{{date}}{{emptyStr}}{{weekth}}{{emptyStr}}{{weekday}}</view>
+</view>
+
+<block wx:if="{{isBinded}}">
+  <view class="card">
+    <block wx:if="{{cours===null || cours.length === 0}}">
+      <view class="nocourse" style="background-color:#fff">今天没课噢~</view>
+    </block>
+    <block wx:else>
+      <block wx:for="{{cours}}" wx:key="index">
+        <view wx:if="{{index %2 == 0}}" class="header" style="background-color:#E0FFFF">
+          <view class="section">{{item.section}} {{item.classtime}}</view>
+          <view class="subject-name">{{item.subjectname}}</view>
+          <image class="position" src="../../images/position.png"> </image>
+          <view class="class-place">{{item.location}}</view>
+        </view>
+        <view wx:if="{{index %2 == 1}}" class="header" style="background-color:#FFF">
+          <view class="section">{{item.section}} {{item.classtime}}</view>
+          <view class="subject-name">{{item.subjectname}}</view>
+          <image class="position" src="../../images/position.png"> </image>
+          <view class="class-place">{{item.location}}</view>
+        </view>
+      </block>
+    </block>
+  </view>
+</block>
+<block wx:else>
+  <view class="nocourse" style="background-color:#fff;color:#1296db" bindtap="bindjwcAccount">立即绑定学号,体验i长大</view>
+</block>
+<view class="notice" wx:if="{{notice.msg != ''}}" bindtap="onClickNotice">
+  <text>通知：</text>{{notice.msg}}</view>
+
+<view class="menu">
+  <block wx:for="{{mainMenu}}" wx:key="index">
+    <view wx:if="{{index < 5 && index >=0}}" class="menu-item" id="{{index}}" bindtap="onSelectMenu">
+      <image wx:if="{{item.status == 1}}" class="menu-icon" src="{{item.positiveImage}}"></image>
+      <image wx:else class="menu-icon" src="{{item.negativeImage}}"></image>
+      <view class="menu-name">{{item.name}}</view>
+    </view>
+  </block>
+</view>
+<view class="menu">
+  <block wx:for="{{mainMenu}}" wx:key="index">
+    <view wx:if="{{index < 10 && index >= 5}}" class="menu-item" id="{{index}}" bindtap="onSelectMenu">
+      <image wx:if="{{item.status == 1}}" class="menu-icon" src="{{item.positiveImage}}"></image>
+      <image wx:else class="menu-icon" src="{{item.negativeImage}}"></image>
+      <view class="menu-name">{{item.name}}</view>
+    </view>
+  </block>
+</view>
+
+<swiper indicator-dots="{{indicator}}" autoplay="true" interval="5000" duration="500" style="height:230px;">
+  <block wx:for="{{bannerList}}">
+    <swiper-item>
+      <view class="box" bindtap="onItemClick" data-id="{{item.id}}" data-type="{{item.type}}">
+        <image src="{{item.image}}"></image>
+        <view class='title'>{{item.title}}</view>
+      </view>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class="flex_row" wx:if="{{bannerList.length > 0 }}">
+  <view class="flex_row__icon"></view>
+  <view class="flex_row__title">活动 & 通知</view>
+</view>
+<view class="modal-box" wx:if="{{CPM.photo || CPM.title || CPM.content}}" hidden="{{flag}}" bindtap="hide">
+  <view class='CPM-container'>
+    <view wx:if="{{CPM.photo != null}}" class='CPM-img-container'>
+      <image class='cule-img' src='{{CPM.photo}}'></image>
+    </view>
+    <view wx:if="{{CPM.title != ''}}" class='CPM-title-container'>
+      <text>{{CPM.title}}</text>
+    </view>
+    <view wx:if="{{CPM.content != ''}}" class='CPM-text-container'>
+      <text class='cule-text'>{{CPM.content}}</text>
+    </view>
+  </view>
+</view>

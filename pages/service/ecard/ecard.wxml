@@ -1,0 +1,98 @@
+<view class="flex_row">
+  <view class="flex_row__title">卡户详细信息</view>
+  <view class="flex_row_right" bindtap="reportLoss" data-statu="open">{{ecardInfo.status == '有效卡'?'挂失':'解挂'}}</view>
+  <image src="/images/right.png"></image>
+</view>
+<view class="line"></view>
+<view class="content">
+  <view class="content_row">
+    <view class="content_row_item">
+      <view class="content_row_item_label">学号</view>
+      <view class="content_row_item_info">{{ecardInfo.stuNum}}</view>
+      <view class="content_row_item_line"></view>
+    </view>
+    <view class="content_row_item">
+      <view class="content_row_item_label">卡号</view>
+      <view class="content_row_item_info">{{ecardInfo.cardNum}}</view>
+      <view class="content_row_item_line"></view>
+    </view>
+  </view>
+  <view class="content_row">
+    <view class="content_row_item">
+      <view class="content_row_item_label">姓名</view>
+      <view class="content_row_item_info">{{ecardInfo.name}}</view>
+      <view class="content_row_item_line"></view>
+    </view>
+    <view class="content_row_item">
+      <view class="content_row_item_label">性别</view>
+      <view class="content_row_item_info">{{ecardInfo.sex}}</view>
+      <view class="content_row_item_line"></view>
+    </view>
+  </view>
+  <view class="content_row">
+    <view class="content_row_item">
+      <view class="content_row_item_label">班级</view>
+      <view class="content_row_item_info">{{ecardInfo.department}}</view>
+      <view class="content_row_item_line"></view>
+    </view>
+    <view class="content_row_item">
+      <view class="content_row_item_label">卡状态</view>
+      <view class="content_row_item_info {{ecardInfo.status == '有效卡' ? 'status_on' : 'status_off' }}">{{ecardInfo.status}}</view>
+      <view class="content_row_item_line"></view>
+    </view>
+  </view>
+  <view class="content_row">
+    <view class="content_row_item">
+      <view class="content_row_item_label">余额</view>
+      <view class="content_row_item_info">￥ {{ecardInfo.balance}} </view>
+      <view class="content_row_item_line"></view>
+    </view>
+    <view class="content_row_item">
+    </view>
+  </view>
+</view>
+<view class="flex_row">
+
+  <!--<view class="flex_row__icon"></view>-->
+  <view class="flex_row__title">历史交易流水</view>
+  <picker mode="date" value="{{date}}" start="2015-09" end="2018-12" bindchange="bindDateChange" fields="month">
+    <view class="picker">
+      {{date}}
+    </view>
+  </picker>
+  <image src="/images/right.png"></image>
+</view>
+<view class="line"></view>
+<view class="content2">
+  <view class="content_row_item_info center space-bottom"> {{todayDate}}交易记录</view>
+  <view class="table">
+    <view class="table_row">
+      <view class="table_row_col__flex_1 label">商户</view>
+      <view class="table_row_col__width_20 label">终端号</view>
+      <view class="table_row_col__width_20 label">交易额</view>
+      <view class="table_row_col__width_20 label">卡余额</view>
+    </view>
+
+    <!--以下是交易流水的表格-->
+    <block wx:for="{{transactionList}}">
+      <view class="table_row {{index % 2 == 0 ? 'table_col_bg' : ''}}">
+        <view wx:if="{{item.port == 0}}" class="table_row_col__flex_1 info">{{item.transactionType}}</view>
+        <view wx:else class="table_row_col__flex_1 info">{{item.merchant}}</view>
+        <view class="table_row_col__width_20 info">{{item.port}}</view>
+        <view class="table_row_col__width_20 info">{{item.amount}}</view>
+        <view class="table_row_col__width_20 info">{{item.balance}}</view>
+      </view>
+    </block>
+
+    <!--交易流水显示完毕-->
+  </view>
+</view>
+<view class="drawer_screen" bindtap="reportLoss" data-statu="close" wx:if="{{showModalStatus}}"></view>
+<view animation="{{animationData}}" class="drawer_box" wx:if="{{showModalStatus}}">
+  <view class="drawer_title">请输入交易密码</view>
+  <view class="drawer_content">
+    <input class="input_base" name="password" type="number" bindblur="bindblur" password="true" focus="true" bindinput="bindinput" bindconfirm="bindconfirm"></input>
+    <view class="txt_ps">Ps:请输入校园卡交易密码</view>
+  </view>
+  <view class="btn_ok" bindtap="reportLoss" data-statu="ok">确定</view>
+</view>

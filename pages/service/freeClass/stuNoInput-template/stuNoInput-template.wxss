@@ -1,0 +1,28 @@
+.input-container {
+  background-color: #f2f2f2;
+  height: 100rpx;
+  width: 100%;
+  margin-top: 10rpx;
+  display: flex;
+  flex-direction: row;
+  border-radius: 15px;
+}
+
+.input_no {
+  display: inline-block;
+  margin: auto 0 auto 20rpx;
+}
+
+.input-container input {
+  display: inline-block;
+  height: 100%;
+  width: 600rpx;
+  margin-left: 20rpx;
+  font-size: 34rpx;
+}
+
+.placeholder {
+  font-size: 18px;
+  color: #d1d1d1;
+  margin-left: 20rpx;
+}

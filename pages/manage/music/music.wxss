@@ -1,0 +1,27 @@
+
+.listitem{
+    width: 100%;
+    background-color: #FFF;
+    margin-top: 1px;
+    display: flex;
+}
+.itemicon{
+    width: 50rpx;
+    height: 50rpx;
+    margin-top: 20rpx;
+    margin-bottom: 20rpx;
+    margin-left: 40rpx;
+    margin-right: 40rpx;
+}
+.itemtext{
+    margin-top: 26rpx;
+    width: 75%;
+    font-size: 30rpx;
+    color: #515151;
+}
+.itemarrow{
+    width: 48rpx;
+    height: 48rpx;
+    margin-top: 20rpx;
+    margin-right: 20rpx;
+}

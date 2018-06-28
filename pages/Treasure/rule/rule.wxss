@@ -1,0 +1,15 @@
+page {
+  padding: 50rpx;
+  width: calc(100% - 100rpx);
+}
+
+.more {
+  margin-top: 50rpx;
+  text-align: center;
+}
+
+image {
+  margin-top: 100rpx;
+  height: 400rpx;
+  width: 650rpx;
+}

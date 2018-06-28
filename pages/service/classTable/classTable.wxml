@@ -1,0 +1,63 @@
+<view class="page">
+  <view class="header">
+    <text class="header-title header-text" bindtap="listenerButton">{{title}}</text>
+    <text class="header-title header-choose" bindtap="listenerButton">﹀</text>
+
+    <!-- 一个下拉列表选择查询项目的 -->
+    <action-sheet hidden="{{actionSheetHidden}}" bindchange="listenerActionSheet">
+      <block wx:for-items="{{actionSheetItems}}" wx:key="unique">
+        <action-sheet-item bindtap="listener{{item.bindtap}}">
+          {{item.txt}}
+        </action-sheet-item>
+      </block>
+
+      <!--自动隐藏action-sheet-->
+      <action-sheet-cancel>取消</action-sheet-cancel>
+    </action-sheet>
+  </view>
+  <view class="choose">
+
+    <!-- 左边的全部 -->
+    <view class="choose-all" bindtap='listenerMenu1'>
+      <text class="choose-all-text">全 部</text>
+      <text class="choose-all-text">课 表</text>
+    </view>
+
+    <!-- 右边的滚动选择 -->
+    <scroll-view scroll-left="{{scrollLeft}}" scroll-x="true" class="scroll-view" scroll-left="{{scrollLeft}}">
+      <view class="choose-scroll" wx:for="{{scroll}}" wx:key="unique" style="background:{{item.background}}">
+        <text class="choose-scroll-text" bindtap="getWeekCourse" id="week:{{index}}" style="">{{item.txt}}</text>
+      </view>
+    </scroll-view>
+  </view>
+
+  <view class="table">
+    <view class="tr week-tr">
+      <view class="td null-td">
+        <text>{{time[0]}}月</text>
+      </view>
+      <view class="td week-td" wx:for="{{week}}">
+        <text style='line-height:45rpx;'>{{item}}</text>
+        <text style='font-size:20rpx;line-height:20rpx;'>{{time[index+1]}}日</text>
+      </view>
+    </view>
+    <view class="tr data-tr" wx:for="{{day}}" wx:for-index="idx" wx:for-item="sectionItem">
+      <view class="td day-td">
+        <text>{{sectionItem}}</text>
+      </view>
+      <block wx:for="{{7}}" wx:for-item="weekDay">
+        <view class="td data-td">
+          <block wx:for="{{data}}">
+            <view wx:if="{{item.section == sectionItem && item.weekday == weekDay+1}}" bindtap="onCourseClick" id="course:{{index}}">
+              <block wx:if="{{staticAll == 0}}">{{item.subjectname + "\n@" +item.location}}</block>
+              <!-- <block wx:if="{{staticAll == 1}}">{{item.subjectname + "\n@" +item.location + "\n[" +item.weekstr+"]"}}</block> -->
+              <block wx:if="{{staticAll == 1}}"><text>{{item.subjectname + "\n@" +item.location }}</text><text class="text">{{ "\n[" +item.weekstr+"]"}}</text></block>
+            </view>
+          </block>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>
+
+<!-- pages/service/classTable/classTable -->

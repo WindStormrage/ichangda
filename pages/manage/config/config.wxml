@@ -1,0 +1,24 @@
+<!--pages/manage/config/config.wxml-->
+<view class="page">
+  <form id='configForm' bindsubmit='submit'>
+    <view class="input">
+      <text>学年学期</text>
+      <input name="XNXQH" type="text" maxlength="20" placeholder='示例：2017-2018-1' />
+    </view>
+    <view class="input">
+      <text>开学时间</text>
+      <input name="TERM_BEGIN_TIME" type="text" maxlength="20" placeholder="示例：2017-9-4" />
+    </view>
+
+    <view class="input">
+      <text>首页通知（MSG）</text>
+      <textarea name="NOTICE_MSG" placeholder="">
+      </textarea>
+    </view>
+    <view class="input">
+      <text>首页通知跳转地址（URL）</text>
+      <input name="NOTICE_URL" type="text" maxlength="20" placeholder="示例：/pages/index/index" />
+    </view>
+    <button class="button" form-type='submit'>提 交</button>
+  </form>
+</view>

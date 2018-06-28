@@ -1,0 +1,46 @@
+<view class="page">
+  <view class="swiper-tab">
+    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">后勤零星维修</view>
+    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">网络故障报修</view>
+    <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">我的报修</view>
+  </view>
+  <swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 31}}px" bindchange="bindChange">
+
+    <!-- 后勤零星维修 -->
+    <swiper-item>
+      <include src="form.wxml" />
+    </swiper-item>
+
+    <!-- 网络故障报修 -->
+    <swiper-item>
+      <include src="form.wxml" />
+    </swiper-item>
+
+    <!-- 我的报修 -->
+    <swiper-item>
+      <view class="page3-title">
+        <view class="text">报修历史</view>
+        <view class="state"></view>
+      </view><!--
+      <view wx:for="{{historyList}}" class="page3-content">
+        <view class="text" id="{{historyList[index].mid}}" bindtap="onBxClick">{{historyList[index].content}}</view>
+        <view class="state">{{historyList[index].state}}</view>
+      </view> -->
+      <view class="page3-content">
+        <view class="page3-left">
+          <view wx:for="{{historyList}}" class="page3-content1">
+            <view class="text" id="{{historyList[index].mid}}" bindtap="onBxClick">{{historyList[index].content}}</view>
+          </view>
+          <view wx:for="{{5}}" class="page3-content1" style="border-bottom: 0 solid #fff;">
+            <view class="text" id="{{historyList[index].mid}}"></view>
+          </view>
+        </view>
+        <view class="page3-right">
+          <view wx:for="{{historyList}}" class="page3-content2">
+            <view class="state">{{historyList[index].state}}</view>
+          </view>
+        </view>
+       </view>
+    </swiper-item>
+  </swiper>
+</view>

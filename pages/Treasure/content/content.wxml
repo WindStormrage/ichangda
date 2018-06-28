@@ -1,0 +1,26 @@
+<view class='container'>
+  <view wx:if="{{data.photo != 'null'}}" class='img-container'>
+    <view wx:for="{{data.photo}}">
+      <image wx:if="{{item}}" class='cule-img' src='{{item}}'></image>
+    </view>
+  </view>
+  <view wx:else>
+    <image class='else-cule-img' src='/images/title.jpg'></image>
+  </view>
+  <view wx:if="{{data.music != 'null'}}" class='music-container'>
+    <view class="cule-music">
+      <audio poster="./../../../images/ccsu_log.jpg" name="线索音频" author="CCSU" src="{{data.music}}" id="myAudio" controls loop></audio>
+    </view>
+  </view>
+  <view>
+    <view class="horizon"></view>
+  </view>
+  <view wx:if="{{data.music != 'null'}}">
+    <view class="al-horizon"></view>
+  </view>
+  <view wx:if="{{data.content != 'null'}}" class='text-container'>
+    <image src='/images/b_comment.png'></image>
+    <text class='cule-text'>{{data.content}}</text>
+  </view>
+</view>
+<view class="msg">找到线索相应地址，找到微寻卡二维码，打开i长大寻宝页面扫一扫，即可获得微寻卡。赶快根据线索去搜集微寻卡吧！</view>

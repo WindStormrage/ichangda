@@ -1,0 +1,35 @@
+<view>
+  <view class='rank'>
+    <view class='second'>
+      <image src='/images/second.png' class='second-crown'></image>
+      <image src='{{data[1].url}}' class='rank-head'></image>
+      <text class='rank-name'>{{data[1].name}}</text>
+      <text class='rank-time'>{{data[1].time}}</text>
+    </view>
+    <view class='first'>
+      <image src='/images/first.png' class='first-crown'></image>
+      <image src='{{data[0].url}}' class='rank-head'></image>
+      <text class='rank-name'>{{data[0].name}}</text>
+      <text class='rank-time'>{{data[0].time}}</text>
+    </view>
+    <view class='third'>
+      <image src='/images/third.png' class='third-crown'></image>
+      <image src='{{data[2].url}}' class='rank-head'></image>
+      <text class='rank-name'>{{data[2].name}}</text>
+      <text class='rank-time'>{{data[2].time}}</text>
+    </view>
+  </view>
+
+  <view class='persons'>
+    <block wx:for="{{data.length-3}}" wx:for-item="person" wx:for-index="pdx">
+      <view class='person'>
+        <text class='p-rank'>{{pdx+4}}</text>
+        <image src='{{data[pdx+3].url}}' class='p-head'></image>
+        <text class='p-name'>{{data[pdx+3].name}}</text>
+        <view class='p-time'>
+          <text>{{data[pdx+3].time}}</text>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

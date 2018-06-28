@@ -1,0 +1,129 @@
+page{
+    padding-top: 100rpx;
+    padding-bottom: 20px;
+    background: #fff;
+}
+
+.find-head{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 710rpx;
+    background: #fff;
+    padding: 20rpx;
+}
+input{
+    width: 500;
+    margin-left: 20rpx;
+}
+.input{
+    width: 500rpx;
+    height: 50rpx;
+    background-color: #fff;
+    border: 1rpx solid #ECECEC;
+    border-radius: 25rpx;
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+}
+.find{
+    width: 140rpx;
+    height: 50rpx;
+    font-size: 25rpx;
+    line-height: 50rpx;
+}
+
+
+.find-card{
+    width: 90%;
+    border: 1rpx solid #BDC3C7;
+    border-radius: 15rpx;
+    margin-left: 5%;
+    box-shadow: 0 0 10rpx #BDC3C7;
+    margin-top: 20rpx;
+}
+.find-card > view{
+    min-height: 66rpx;
+    line-height: 66rpx;
+    padding-left: 20rpx;
+    border-bottom: 1rpx solid #BDC3C7;
+    
+}
+.find-card > view:last-child{
+    border-bottom: none;
+}
+.borrow-list{
+    padding: 10rpx;
+
+}
+.borrow-item{
+    width: 730rpx;
+    border-bottom: 1rpx solid #BDC3C7;
+    margin-bottom: 1rpx;
+    margin-top: 1rpx;
+}
+.borrow-item .name{
+    font-size: 40rpx;
+    font-family: '微软雅黑';
+
+}
+.borrow-item .detail{
+
+    color: gray;
+}
+.borrow-item .detail .text{
+    margin-right: 15rpx;
+    font-size: 25rpx;
+    float: left;
+}
+.reloan-btn{
+    width: 100rpx;
+    height: 50rpx;
+    font-size: 30rpx;
+    border: 1rpx solid #BDC3C7;
+    line-height: 50rpx;
+    text-align: center;
+    border-radius: 10rpx;
+    float: right;
+    margin: 16rpx;
+}
+
+
+.flex_row {
+  margin-top: 1px;
+  display: flex;
+  flex-direction: row;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  background: #fff;
+}
+
+.flex_row__icon {
+  border: 2px #1296db solid;
+  height: 12px;
+  margin-top: 4px;
+}
+
+.flex_row__title {
+  font-family: '黑体';
+  margin-left: 15rpx;
+  flex: 1
+}
+
+.flex_row__title {
+  font-family: '黑体';
+  margin-left: 15rpx;
+  flex: 1
+}
+.flex_row_right{
+  margin-right: 20rpx;
+  padding: 10rpx;
+  line-height: 30rpx;
+  background-color: #fff;
+  border-radius: 5px;
+  font-size: 24rpx;
+  text-align: right;
+  color: #1296db;
+}

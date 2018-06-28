@@ -1,0 +1,30 @@
+.page{
+  margin: 50rpx;
+}
+.title{
+  width: 100%;
+  text-align: center;
+  font-size: 50rpx;
+  margin-top: 20rpx;
+}
+.content{
+  margin-top: 20rpx;
+  width: 100%;
+  text-align: left;
+  font-size: 30rpx;
+  text-indent:2em;
+}
+.time{
+  width: 100%;
+  text-align: right;
+  font-size: 30rpx;
+  padding-right: 50rpx;
+  margin-top: 20rpx;
+}
+.name{
+  width: 100%;
+  text-align: right;
+  font-size: 30rpx;
+  padding-right: 50rpx;
+  margin-top: 10rpx;
+}

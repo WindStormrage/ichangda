@@ -1,0 +1,116 @@
+.page {
+  font-size: 25rpx;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+.all-whweek {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 30rpx;
+  margin-bottom: 20rpx;
+}
+
+.all-class {
+  background: #98ccfb;
+  border-radius: 15rpx;
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.all-class text {
+  display: block;
+  text-align: center;
+  font-size: 30rpx;
+  line-height: 40rpx;
+}
+
+.scroll-contarner {
+  width: 628rpx;
+  height: 90rpx;
+  white-space: nowrap; /* 文本不换行 */
+  display: flex;
+  overflow: scroll;
+  margin-left: 20rpx;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+.whweek {
+  width: 80rpx; /* //圆形的高宽 */
+  height: 80rpx;
+  display: inline-block; /* //行内块元素 */
+  border: 1rpx solid #c4dffc; /* //为圆角 */
+  border-radius: 80rpx; /* //圆角 */
+  margin-right: 20rpx;
+  background: #81d6f5;
+}
+
+.whweek-text {
+  display: block;
+  line-height: 80rpx;
+  text-align: center;
+}
+
+.table {
+  border-bottom: 1rpx solid #666;
+}
+
+.week-null, .week-day, .class-day, .class-data {
+  border-right: 1rpx solid #666;
+}
+
+.week {
+  display: flex;
+}
+
+.week-null {
+  width: 50rpx;
+  text-align: center;
+}
+
+.week-day {
+  flex: 1;
+  text-align: center;
+}
+
+.class {
+  display: flex;
+}
+
+.class-day {
+  width: 50rpx;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.class-data {
+  font-size: 32rpx;
+  padding: 1rpx;
+  flex: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.newGroup-container {
+  height: 80rpx;
+  width: 100%;
+}
+
+.newGroup {
+  font-size: 32rpx;
+  height: 80rpx;
+  width: 100%;
+  margin-top: 15rpx;
+  background-color: #19b4ec;
+}

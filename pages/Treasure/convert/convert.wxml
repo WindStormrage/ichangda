@@ -1,0 +1,14 @@
+<view class="container">
+  <image class='redeem-img' src='/images/redeem.png'></image>
+  <view class="redeem-container">
+    <text class='your'>您的兑换码</text>
+    <text class='redeem-code' catchtap='toWantCollect'>{{redeemCode}}</text>
+  </view>
+  <view>点击兑换码选择你想要的奖品</view>
+  <view class="lead-container">
+    <text class='lead'>恭喜您寻宝完成，请前往涵虚楼C3405兑奖!</text>
+    <text class='lead'>兑奖时间每日12：30-13：20</text>
+    <text class='lead'>提示:至少需要集齐两个微寻卡才能兑奖!</text>
+    <text class='lead'>您的集齐数:{{cardNum}}</text>
+  </view>
+</view>

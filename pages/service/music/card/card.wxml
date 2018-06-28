@@ -1,0 +1,27 @@
+<view class="page">
+    <view class="title"></view>
+    <view class="card">
+        <view class="img" bindtap="exchange">
+          <image src='{{img}}'></image>
+        </view>
+        <view class="head">
+          <image src='{{head}}'></image>
+        </view>
+        <view class="content">
+            <text class="music-name">《{{musicName}}》</text>
+            <text class="songer">{{songer}}</text>
+            <text class="name">{{name}}</text>
+            <text class="time">{{time}}</text>
+            <text class="text">— 我点了一首歌,想要送给你 —</text>
+        </view>
+    </view>
+    <view class="about">
+        <view class="code">
+            <image src="../../../../images/code.png" alt=""></image>
+        </view>
+        <view class="ps">
+            <text class="ps1">长按识别二维码，为Ta点歌</text>
+            <text class="ps2">听Ta想说的话</text>
+        </view>
+    </view>
+</view>

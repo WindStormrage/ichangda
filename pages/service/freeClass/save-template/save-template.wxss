@@ -1,0 +1,132 @@
+.group {
+  display: flex;
+  flex: row;
+  width: 750rpx;
+  height: 80rpx;
+  margin-top: 15rpx;
+  align-items: center;
+}
+
+.group-img {
+  width: 40rpx;
+  height: 40rpx;
+  margin-left: 30rpx;
+}
+
+.group-name {
+  font-size: 40rpx;
+  margin-left: 20rpx;
+}
+
+.group-num {
+  font-size: 34rpx;
+  margin: 0 30rpx 0 auto;
+}
+
+.show {
+  float: right;
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 50rpx;
+}
+
+.remove {
+  float: right;
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 50rpx;
+}
+
+.person {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  height: 40rpx;
+  line-height: 40rpx;
+  width: 100%;
+  font-size: 40rpx;
+  margin-top: 30rpx;
+}
+
+.personName {
+  margin-left: 50rpx;
+}
+
+.personId {
+  margin-left: 20rpx;
+}
+
+.personDelete {
+  position: absolute;
+  right: 58rpx;
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.personAdd {
+  margin-top: 28rpx;
+  text-align: center;
+}
+
+.Add {
+  width: 55rpx;
+  height: 55rpx;
+}
+
+/*  */
+
+.drawer_screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: #000;
+  opacity: 0.3;
+  overflow: hidden;
+}
+
+/*content*/
+
+.drawer_box {
+  width: 650rpx;
+  overflow: hidden;
+  position: fixed;
+  top: 20%;
+  left: 50rpx;
+  z-index: 1001;
+  background: #fafafa;
+  border-radius: 3px;
+}
+
+.drawer_title {
+  padding: 15px;
+  font: 20px "microsoft yahei";
+  text-align: center;
+}
+
+.drawer_content {
+  padding-bottom: 30rpx;
+  overflow-y: scroll; /*超出父盒子高度可滚动*/
+}
+
+.btn_ok {
+  padding: 10px;
+  font: 20px "microsoft yahei";
+  text-align: center;
+  border-top: 1px solid #e8e8ea;
+  color: #3cc51f;
+}
+
+.input_base {
+  border: 2rpx solid #ccc;
+  margin: 50rpx 50rpx 10rpx 50rpx;
+  line-height: 40px;
+}
+
+.txt_ps {
+  margin-left: 50rpx;
+  font-size: 15px;
+  color: #ccc;
+}

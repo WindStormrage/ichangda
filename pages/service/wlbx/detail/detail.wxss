@@ -1,0 +1,35 @@
+.card{
+    margin: 30rpx 20rpx;
+    box-shadow: -3px 3px 10px #666;
+}
+.cell{
+    padding: 20rpx 30rpx;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.cell::after{
+    content: " ";
+    height: 2rpx;
+    width: calc(100% - 59rpx);
+    position: absolute;
+    bottom: 0;
+    border-bottom: 2rpx solid #d9d9d9;
+    color: #d9d9d9;
+}
+.tetle{
+    width: 30%;
+}
+.content{
+    width: 70%;
+    margin-left: 30rpx;
+    word-wrap:break-word;/* 强制换行 */
+    word-break:break-all;
+    overflow: hidden;
+}
+.all_title{
+    font-family: Microsoft YaHei;
+    font-size: 50rpx;
+    color: #1296db;
+}

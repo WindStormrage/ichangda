@@ -1,0 +1,49 @@
+<view class="flex_row">
+  <view class="flex_row__icon"></view>
+  <view class="flex_row__title">我的借阅信息</view>
+  <view wx:if="{{borrowList.length <= 0 }}" class="flex_row_right"> 无借阅信息</view>
+  <view wx:else class="flex_row_right" bindtap="hideBorrowList">
+    {{showBorrowList == true ? '收起':'展开'}}
+  </view>
+</view>
+<view wx:if="{{showBorrowList && borrowList.length > 0}}" class="borrow-list">
+  <block wx:for="{{borrowList}}">
+    <view class="borrow-item">
+      <view class="name">{{item.bookName}}</view>
+      <view class="detail">
+        <view class="text">续借：{{item.count}}</view>
+        <view class="text">借书日期：{{item.lendDate}}</view>
+        <view class="text">应还日期：{{item.restoreDate}}</view>
+      </view>
+      <view style="clear:both"></view>
+      <view class="reloan-btn" bindtap="reloanBook" id="{{item.barcode}}">续借</view>
+      <view style="clear:both"></view>
+    </view>
+  </block>
+</view>
+<view class="flex_row">
+  <view class="flex_row__icon"></view>
+  <view class="flex_row__title">图书检索结果</view>
+  <view class="flex_row_right"> {{keywords}}</view>
+</view>
+<view class="find-head">
+  <input class="input" bindinput="bindKeyInput" placeholder="输入书名、作者等关键词" />
+  <button bindtap="bindreturn" class="find">搜索</button>
+</view>
+<view class="find-body">
+  <block wx:for="{{searchList}}">
+    <view class="find-card">
+      <view class="name">{{item.bookName}}</view>
+      <!--<view class="name">{{item.description}}</view>-->
+      <view class="author">{{item.author}}</view>
+      <view class="press">{{item.publisher}}</view>
+      <view class="time">{{item.publicationDate}}</view>
+      <view class="isbn">{{item.isbn}}</view>
+      <view class="price">{{item.price}}</view>
+      <view class="callNumber">{{item.callNumber}}</view>
+      <view class="classNumber">{{item.classNumber}}</view>
+      <view class="pageCount">{{item.pageCount}}</view>
+      <view class="description">{{item.description}}</view>
+    </view>
+  </block>
+</view>

@@ -1,0 +1,22 @@
+<view class='container'>
+  <block wx:for="{{data}}" wx:for-item="clue" wx:for-index="cdx">
+    <view class='c-container' bindtap='culeDetail' data-id='cule:{{cdx}}'>
+      <image src='/images/sights.png' class='sights'></image>
+      <view class='c-text'>
+        <text>线索 {{cdx+1}}</text>
+      </view>
+      <view class="c-img">
+        <view wx:if="{{clue.content}}">
+          <image src='/images/b_comment.png' class='c-img-img'></image>
+        </view>
+        <view wx:if="{{clue.music}}">
+          <image src='/images/b_remind.png' class='c-img-img'></image>
+        </view>
+        <view wx:if="{{clue.photo}}">
+          <image src='/images/b_pic.png' class='c-img-img'></image>
+        </view>
+      </view>
+      <text class='c-img-text'>i长大</text>
+    </view>
+  </block>
+</view>

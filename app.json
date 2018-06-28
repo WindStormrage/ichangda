@@ -1,0 +1,81 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/news/news",
+    "pages/me/me",
+    "pages/bindAccount/bindAccount",
+    "pages/about/about",
+    "pages/feedback/feedback",
+    "pages/article/article",
+    "pages/service/freeClass/class/class",
+    "pages/service/freeClass/myGroupings/myGroupings",
+    "pages/service/freeClass/seek/seek",
+    "pages/service/grade/grade",
+    "pages/service/classTable/classTable",
+    "pages/service/schoolMap/schoolMap",
+    "pages/service/wlbx/wlbx",
+    "pages/service/wlbx/detail/detail",
+    "pages/service/lostAndFound/lostAndFound",
+    "pages/service/lostAndFound/addMsg/addMsg",
+    "pages/service/lostAndFound/detail/detail",
+    "pages/service/library/library",
+    "pages/service/ecard/ecard",
+    "pages/service/vote/vote",
+    "pages/service/music/from/from",
+    "pages/service/music/card/card",
+    "pages/service/music/main/main",
+    "pages/luckDraw/luckDraw",
+    "pages/manage/music/music",
+    "pages/manage/manage",
+    "pages/help/help",
+    "pages/manage/config/config",
+    "pages/prompt/prompt",
+    "pages/manage/music/content/content",
+    "pages/manage/music/stage/stage",
+    "pages/service/classTable/all/all",
+    "pages/service/nullClassTable/nullClassTable",
+    "pages/Treasure/wait/wait",
+    "pages/Treasure/answer/answer",
+    "pages/Treasure/end/end",
+    "pages/Treasure/list/list",
+    "pages/Treasure/me/me",
+    "pages/Treasure/ranking/ranking",
+    "pages/Treasure/content/content",
+    "pages/Treasure/list2/list2",
+    "pages/Treasure/convert/convert",
+    "pages/Treasure/convert-manager/convert-manager",
+    "pages/Treasure/rule/rule",
+    "pages/Treasure/want-collect/want-collect"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#19b4ec",
+    "navigationBarTitleText": "i长大",
+    "navigationBarTextStyle": "#fff",
+    "backgroundColor": "#ffffff",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "color": "#515151",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "selectedColor": "#1296db",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/school.png",
+        "selectedIconPath": "images/school_selected.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "images/me.png",
+        "selectedIconPath": "images/me_selected.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000
+  }
+}

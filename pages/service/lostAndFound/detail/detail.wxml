@@ -1,0 +1,38 @@
+<swiper indicator-dots="true" autoplay="true" interval="5000" duration="200" style="height:{{winHeight/2}}px;width:{{winWidth}}px;">
+  <block wx:for="{{lostAndFound.imageList}}">
+    <swiper-item>
+      <image src="{{item}}" style="height:{{winHeight/2}}px;width:{{winWidth}}px;" />
+    </swiper-item>
+  </block>
+</swiper>
+<view class="content">
+  <view class="head">
+    <view class="flex_1">
+      <view class="name">
+        {{lostAndFound.name}}
+      </view>
+      <view class="date">
+        发布时间：{{lostAndFound.createdate}}
+      </view>
+    </view>
+    <image src="{{wxInfo.pictrue}}"></image>
+  </view>
+  <view class="addr">
+    丢失地点：{{lostAndFound.location}}
+  </view>
+  <view class="body">
+    <view class="description flex_1">
+      {{lostAndFound.description}}
+      <view style="width:90%;text-align:right;margin-top:20rpx;font-size:25rpx;">——联系我时请说明来自 i长大</view>
+    </view>
+  </view>
+  <view class="notic">
+    点击右上角转发,让更多人看到
+  </view>
+  <view class="call">
+    <image src="/images/phone.png"></image>
+    <view class="call_txt" bindtap="callPhone">{{lostAndFound.phone}}</view>
+    <image src="/images/qq.png"></image>
+    <view class="call_txt" bindtap="copyQQ">{{lostAndFound.qq}}</view>
+  </view>
+</view>

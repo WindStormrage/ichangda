@@ -1,0 +1,72 @@
+<form bindsubmit="onSubmit">
+  <view class="card">
+    <view class="cell">
+      <view class="all_title">发布信息</view>
+      <view class="prompt">请将信息填写完整</view>
+    </view>
+    <view class="cell">
+      <view class="title">寻找类型</view>
+      <view class="content0">
+        <radio-group class="radio-group" name="type">
+          <label class="radio" wx:for-items="{{items}}">
+            <radio value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+          </label>
+        </radio-group>
+      </view>
+    </view>
+    <view class="cell">
+      <view class="title">物品名称</view>
+      <view class="content">
+        <input name="name" />
+      </view>
+    </view>
+    <view class="cell">
+      <view class="title">选择分类</view>
+      <view class="content1">
+        <picker name="classification" value="{{index}}" range="{{array}}" bindchange="bindPickerChange">
+          <view class="picker">
+            {{array[index]}}
+          </view>
+        </picker>
+      </view>
+    </view>
+    <view class="cell">
+      <view class="title">物品描述</view>
+      <view class="content">
+        <textarea name="description" auto-height />
+      </view>
+    </view>
+    <view class="cell">
+      <view class="title">丢失地点</view>
+      <view class="content">
+        <input name="location" />
+      </view>
+    </view>
+    <view class="cell">
+      <view class="title">Q Q 号码</view>
+      <view class="content">
+        <input name="qq" />
+      </view>
+    </view>
+    <view class="cell">
+      <view class="title">手机号码</view>
+      <view class="content">
+        <input name="phone" />
+      </view>
+    </view>
+    <view class="cell">
+      <view class="title">图片上传</view>
+      <view class="content" style="display:flex;flex-direction:row;">
+        <view wx:for="{{uploadImageList}}">
+          <image class="uploadfile" bindtap="onClickImage" src="{{uploadImageList[index]}}" id="{{index}}"></image>
+        </view>
+        <image wx:if="{{uploadImageList.length < 3}}" class="uploadfile" bindtap="addImage" mode="aspectFit" src="/images/upload_icon.png"></image>
+      </view>
+    </view>
+  </view>
+  <view class="up">
+    <button type="defaule" size="mini" form-type="submit">
+      提 交
+    </button>
+  </view>
+</form>

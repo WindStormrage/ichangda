@@ -1,0 +1,17 @@
+<view class='container'>
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="section">
+      <view class="section__title">你想要那些奖品？</view>
+      <checkbox-group name="checkbox">
+        <label><checkbox  value="定制明信片" />定制明信片（2个卡片）</label>
+        <label><checkbox value="定制钥匙扣" />定制钥匙扣（2个卡片）</label>
+        <label><checkbox value="定制帆布包" />定制帆布包（4个卡片）</label>
+        <label><checkbox value="定制手机壳" />定制手机壳（6个卡片）</label>
+      </checkbox-group>
+    </view>
+    <view class="btn-area">
+      <button formType="submit">提交</button>
+      <button formType="reset">重置</button>
+    </view>
+  </form>
+</view>

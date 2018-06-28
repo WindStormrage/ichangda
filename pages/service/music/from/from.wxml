@@ -1,0 +1,35 @@
+<view class="page">
+    <form bindsubmit="formSubmit" report-submit="true">
+        <view class="input">
+            <text>歌曲名称</text>
+            <input type="text" name="musicname" maxlength="20"/>
+        </view>
+        <view class="input">
+            <text>歌手名字</text>
+            <input type="text" name="songer" maxlength="10"/>
+        </view>
+        <view class="type">
+            <view class="name">歌曲类型</view>
+            <view class="var">
+                <radio-group class="radio-group" name="type">
+                      <label class="radio" wx:for="{{radio}}">
+                            <radio color="#00B1F7" value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+                      </label>
+                </radio-group>
+            </view>
+        </view>
+        <view class="input" style="margin-top: 10rpx;">
+            <text>这首歌最打动你的一句歌词</text>
+            <input type="text" maxlength="100" placeholder="选填" name="lrc"/>
+        </view>
+        <view class="input">
+            <text>你想对Ta说</text>
+            <input type="text" name="words" maxlength="100"/>
+        </view>
+        <view class="input">
+            <text>为Ta点歌的原因</text>
+            <input type="text" name="reason" maxlength="100"/>
+        </view>
+        <button class="button" formType="submit">提 交</button>
+    </form>
+</view>

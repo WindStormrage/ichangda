@@ -1,0 +1,42 @@
+<view class='page'>
+  <view class='header'>
+    <view>第{{time}}期</view>
+  </view>
+
+  <view class="none{{showView?'block':''}}">
+    <view class='number'>
+      <scroll-view class='scroll-view' scroll-x style='width: 100%;'>
+        <view wx:for="{{20}}" bindtap="whichTime" style="background-color:{{time==index+1?'#3ec0ef':'#81d6f5'}}" data-time='{{index}}'>{{index+1}}</view>
+      </scroll-view>
+    </view>
+  </view>
+
+  <view class='content' wx:for="{{data}}">
+    <view class='music-container'>
+      <view class='music'>
+        <image src='{{item.pictrue}}' class='music-img'></image>
+        <view class='music-name'>{{item.nickname}}</view>
+        <view class='music-song'>《{{item.musicname}}》
+        </view>
+        <view class='music-singer'>——{{item.songer}}</view>
+        <image src="{{item.is_sign?'star_solid.png':'star.png'}}" class='star' bindtap='starTap' data-id="{{item.id}}"></image>
+        <view class='x' bindtap='deleteTap' data-id="{{item.id}}">×</view>
+      </view>
+    </view>
+    <view class='content-container'>
+      <view class='lyrics-container'>
+        <view class='lyrics'>歌词 :</view>
+        <view class='lyrics-detail'>{{item.lrc}}</view>
+      </view>
+      <view class='say-container'>
+        <view class='say'>对Ta说:</view>
+        <view class='say-detail'>{{item.words}}</view>
+      </view>
+      <view class='reson-container'>
+        <view class='reson'>理由:</view>
+        <view class='reson-detail'>{{item.reason}}</view>
+      </view>
+    </view>
+  </view>
+  <button bindtap="send">发送提示消息</button>
+</view>

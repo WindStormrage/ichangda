@@ -1,0 +1,55 @@
+<view class="card">
+    <view class="cell">
+        <view class="all_title">报修详情</view>
+    </view>
+    <view class="cell">
+        <view class="title">报修状态:</view>
+        <view class="content">{{detail.state}}
+        </view>
+    </view>
+    <view class="cell">
+        <view class="title">报修编号:</view>
+        <view class="content">{{detail.bxbh}}
+        </view>
+    </view>
+    <view class="cell">
+        <view class="title">报修时间:</view>
+        <view class="content">{{detail.bxsj}}
+        </view>
+    </view>
+    <view class="cell">
+        <view class="title">报修种类:</view>
+        <view class="content">{{detail.bxzl}}
+        </view>
+    </view>
+    <view class="cell">
+        <view class="title">报修电话:</view>
+        <view class="content">{{detail.bxdh}}
+        </view>
+    </view>
+    <view class="cell">
+        <view class="title">校区名称:</view>
+        <view class="content">{{detail.xqmc}}
+        </view>
+    </view>
+    <view class="cell">
+        <view class="title">建筑名称:</view>
+        <view class="content">{{detail.jzmc}}
+        </view>
+    </view>
+    <view class="cell">
+        <view class="title">维修地点:</view>
+        <view class="content">{{detail.wxdd}}
+        </view>
+    </view>
+    <view class="cell">
+        <view class="title">维修内容:</view>
+        <view class="content">{{detail.wxnr}}
+        </view>
+    </view>
+    <view class="cell">
+        <view class="title">备注信息:</view>
+        <view class="content">{{detail.bzxx}}
+        </view>
+    </view>
+</view>

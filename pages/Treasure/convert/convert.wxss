@@ -1,0 +1,45 @@
+page {
+  background-color: #b4eefa;
+}
+
+.redeem-img {
+  width: 300rpx;
+  height: 300rpx;
+  margin-top: 100rpx;
+}
+
+.lead {
+  font-size: 36rpx;
+}
+
+.container, .redeem-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.lead-container {
+  text-align: center;
+  margin-top: 200rpx;
+}
+
+.lead {
+  display: inline-block;
+  margin: 0 10rpx;
+}
+
+.redeem-container {
+  margin-top: 80rpx;
+}
+
+.your {
+  font-size: 36rpx;
+}
+
+.redeem-code {
+  display: inline-block;
+  margin: 0 20rpx;
+  font-size: 76rpx;
+}

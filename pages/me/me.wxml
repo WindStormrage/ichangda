@@ -1,0 +1,46 @@
+
+<!--news.wxml-->
+<view class="body">
+  <view class="header flex" style="background-image: url('https://ccsu.notobject.com/ichangda/images/me_header.jpg')">
+    <view class="header-img">
+      <image src="{{userInfo.avatarUrl}}" />
+    </view>
+    <view class="header-txt">{{userInfo.nickName}}</view>
+  </view>
+
+  <view class="listitem" bindtap="onItemClick" id="3">
+    <image class="itemicon" src="../../images/bangding.png"></image>
+    <view class="itemtext">{{account}}</view>
+    <image class="itemarrow" src="../../images/right.png"></image>
+  </view>
+  <view class="listitem" bindtap="onItemClick" id="6">
+    <image class="itemicon" src="../../images/saoyisao.png"></image>
+    <view class="itemtext">扫一扫</view>
+    <image class="itemarrow" src="../../images/right.png"></image>
+  </view>
+  <view style="height:30rpx;"></view>
+  <view class="listitem" bindtap="onItemClick" id="4">
+    <image class="itemicon" src="../../images/fankui.png"></image>
+    <view class="itemtext">反馈</view>
+    <image class="itemarrow" src="../../images/right.png"></image>
+  </view>
+  <view class="listitem" bindtap="onItemClick" id="5">
+    <image class="itemicon" src="../../images/guanyu.png"></image>
+    <view class="itemtext">关于</view>
+    <image class="itemarrow" src="../../images/right.png"></image>
+  </view>
+  <view style="height:30rpx;"></view>
+  <view class="listitem" bindtap="onItemClick" id="7" wx:if="{{power == 10000 || power == 8888}}">
+    <image class="itemicon" src="../../images/guanli.png"></image>
+    <view class="itemtext">后台管理</view>
+    <image class="itemarrow" src="../../images/right.png"></image>
+  </view>
+</view>
+<view class="weui-msg__extra-area">
+  <view class="weui-footer">
+    <view class="weui-footer__links">
+      <view class="weui-footer__text">新媒体运营中心</view>
+    </view>
+    <view class="weui-footer__text">Copyright 2014-2017 ichangda</view>
+  </view>
+</view>

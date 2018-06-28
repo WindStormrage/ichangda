@@ -1,0 +1,41 @@
+
+<!--bbs.wxml-->
+<view class="tabMenu">
+  <!--<image src="../../images/news.png" class="news_log0"></image>-->
+  <view wx:if="{{ currentType == 'hdhb'}}">
+    <view id="hdhb" bindtap="onTabSelected" class="tabMenu-item-activited">活动海报</view>
+  </view>
+  <view wx:else>
+    <view id="hdhb" bindtap="onTabSelected" class="tabMenu-item-nomarl">活动海报</view>
+  </view>
+  <view wx:if="{{ currentType == 'xbkx'}}">
+    <view id="xbkx" bindtap="onTabSelected" class="tabMenu-item-activited">系部快讯</view>
+  </view>
+  <view wx:else>
+    <view id="xbkx" bindtap="onTabSelected" class="tabMenu-item-nomarl">系部快讯</view>
+  </view>
+  <view wx:if="{{ currentType == 'xwxx'}}">
+    <view id="xwxx" bindtap="onTabSelected" class="tabMenu-item-activited">新闻信息</view>
+  </view>
+  <view wx:else>
+    <view id="xwxx" bindtap="onTabSelected" class="tabMenu-item-nomarl">新闻信息</view>
+  </view>
+</view>
+<view class="news">
+  <block wx:for="{{newsList}}">
+     <block wx:if="{{ item.type == currentType}}">
+    <view id="{{item.id}}" class="weui-media-box" bindtap="onItemClick">
+      <view class="weui-media-box_text">
+        <view class="weui-media-box__title">{{item.title}}</view>
+        <view class="weui-media-box__desc">{{item.descpt}}</view>
+        <view class="weui-media-box__info">
+          <view class="weui-media-box__info__meta">{{item.from}}</view>
+          <view class="weui-media-box__info__meta">{{item.date}}</view>
+          <view class="weui-media-box__info__meta weui-media-box__info__meta_extra">{{item.author}}</view>
+        </view>
+      </view>
+    </view>
+    <view class="line"></view>
+    </block>
+  </block>
+</view>

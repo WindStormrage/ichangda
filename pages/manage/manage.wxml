@@ -1,0 +1,9 @@
+<view>
+  <block wx:for="{{config}}">
+    <view class="listitem" bindtap="onItemClick" id="{{index}}">
+      <image class="itemicon" src="../../images/guanli.png"></image>
+      <view class="itemtext">{{item.name}}</view>
+      <image class="itemarrow" src="../../images/right.png"></image>
+    </view>
+  </block>
+</view>

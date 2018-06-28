@@ -1,0 +1,47 @@
+.page{
+    font-size: 15rpx;
+    word-break:break-all;
+    word-wrap:break-word;
+}
+
+
+.table{
+    border-bottom: 1rpx solid #666;
+}
+.week-null, .week-day, .class-day, .class-data{
+    border-right: 1rpx solid #666;
+}
+
+
+.week{
+    display: flex;
+}
+.week-null{
+    width: 50rpx;
+    text-align: center;
+}
+.week-day{
+    flex: 1;
+    text-align: center;
+}
+
+
+.class{
+    display: flex;
+}
+.class-day{
+    width: 50rpx;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.class-data{
+    padding: 1rpx;
+    flex: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,6 @@
+<view class="page {{shine}}">
+    <view wx:if="{{state==1}}" class='done'>恭喜你兑奖成功</view>
+    <view wx:if="{{state==2}}" class='luck'>恭喜你中奖啦</view>
+    <view wx:if="{{state==2}}" class='luck-msg'>请于活动结束后前往兑奖处兑奖</view>
+    <button wx:if="{{state==2}}" class="button" bindtap='button' onclick=""></button>
+</view>

@@ -1,0 +1,28 @@
+<view class="page">
+    <view class="conf">
+        <view class="all">题目:{{i+1}}/5</view>
+        <view class="fraction">得分:{{g}}/5</view>
+    </view>
+    <view class="msg">题目正确率越高，获得线索越多</view>
+    <view wx:for="{{data}}" wx:if="{{index == i}}">
+        <image src='./../../../images/dati01.png'></image>
+        <view class="title">第 {{i+1}} 题</view>
+        <view class="title_content">{{item.title}}</view>
+        <image src='./../../../images/dati02.png'></image>
+        <view class="content">
+<!--        click数组一个是当期点击的选项，一个是正确答案的选项
+            首先如果click里面没有出现当前的选项，那么就不会变色，还是原来的蓝色
+            然后如click里面有当前选项，然后再去判断good是不是它，如果是的他就是一个正确选项，然后变成绿色，如果不是那么就是红色 -->
+            <view class="option">
+                <view id="A" bindtap="choose" style="border-color: {{(click[0] == 'A'||click[1] == 'A')?(good=='A'? '#18CE2E': '#FD5548'):'#19B4EC'}}; color: {{(click[0] == 'A'||click[1] == 'A')?(good=='A'? '#18CE2E': '#FD5548'):'#19B4EC'}}">A {{item.a}}</view>
+                <view id="B" bindtap="choose" style="border-color: {{(click[0] == 'B'||click[1] == 'B')?(good=='B'? '#18CE2E': '#FD5548'):'#19B4EC'}}; color: {{(click[0] == 'B'||click[1] == 'B')?(good=='B'? '#18CE2E': '#FD5548'):'#19B4EC'}}">B {{item.b}}</view>
+                <view id="C" bindtap="choose" style="border-color: {{(click[0] == 'C'||click[1] == 'C')?(good=='C'? '#18CE2E': '#FD5548'):'#19B4EC'}}; color: {{(click[0] == 'C'||click[1] == 'C')?(good=='C'? '#18CE2E': '#FD5548'):'#19B4EC'}}">C {{item.c}}</view>
+                <view id="D" bindtap="choose" style="border-color: {{(click[0] == 'D'||click[1] == 'D')?(good=='D'? '#18CE2E': '#FD5548'):'#19B4EC'}}; color: {{(click[0] == 'D'||click[1] == 'D')?(good=='D'? '#18CE2E': '#FD5548'):'#19B4EC'}}">D {{item.d}}</view>
+            </view>
+        </view>
+        <view class="bottun">
+          <view class="next" wx:if="{{next == 1}}" bindtap="next">下一题</view>
+          <view class="finnish" wx:if="{{next == 2}}" bindtap="finnish">完  成</view>
+        </view>
+    </view>
+</view>

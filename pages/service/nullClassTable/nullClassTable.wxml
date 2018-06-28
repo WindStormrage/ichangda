@@ -1,0 +1,25 @@
+<view class="page">
+    <view class="table" wx:for="{{data}}" wx:for-index="trx">
+        <!-- 周几那一行 -->
+        <view class="week" wx:if="{{trx == -1}}">
+            <!-- 第一行第一列的空格 -->
+            <view class="week-null">*</view>
+            <!-- 渲染第几周 -->
+            <view class="week-day" wx:for="{{7}}" wx:for-index="tdx">
+                {{week[tdx]}}
+            </view>
+        </view>
+
+        <!-- 课表的那几行 -->
+        <view class="class" wx:if="{{trx != -1}}">
+            <!-- 课表的第一列，第几节课 -->
+            <view class="class-day">
+                <view>{{trx}}</view>
+            </view>
+            <!-- 课表的内容 -->
+            <view class="class-data" wx:for="{{item}}" wx:for-index="tdx">
+                <text wx:for="{{item}}">{{item}}</text>
+            </view>
+        </view>
+    </view>
+</view>

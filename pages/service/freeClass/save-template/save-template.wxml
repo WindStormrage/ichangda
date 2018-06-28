@@ -1,0 +1,31 @@
+<template name="saveTemplate">
+  <view class='group' catchtap='unfoldGroup' data-groupName="{{group.groupName}}" data-statu="open" catchlongpress="groupChange">
+    <image src="{{group.isUnfold?'../../../../images/more_unfold.png':'../../../../images/more.png'}}" class="group-img"></image>
+    <text class='group-name'>{{group.groupName}}</text>
+    <text class='group-num'>{{group.gMembers.length ||0}}人</text>
+    <image hidden="{{setting}}" class='show' catchtap='showClass' data-groupName='{{group.groupName}}' src='../../../../images/browse.png'></image>
+    <image hidden="{{!setting}}" class='remove' catchtap='groupRemove' data-groupName='{{group.groupName}}' src='../../../../images/remove.png'></image>
+  </view>
+  <view hidden="{{!group.isUnfold}}">
+    <block wx:for="{{group.gMembers}}" wx:for-item="person" wx:for-index="personIndex" wx:key="groupName">
+      <view class='person'>
+        <view class='personName'>{{person.memberName}}</view>
+        <view class='personId'>{{person.memberJwcAccount}}</view>
+        <image hidden='{{!setting}}' data-groupName="{{group.groupName}}" data-memberJwcAccount="{{person.memberJwcAccount}}" class='personDelete' catchtap='personDelete' src='../../../../images/delete.png'></image>
+      </view>
+    </block>
+    <view class='personAdd'>
+      <image hidden='{{!setting}}' class='Add' catchtap="addStu" data-groupName="{{group.groupName}}" data-statu="open" src='../../../../images/add2.png'></image>
+    </view>
+  </view>
+  <view class="drawer_screen" catchtap="addStu" data-statu="close" wx:if="{{showModalStatus}}"></view>
+  <view animation="{{animationData}}" class="drawer_box" wx:if="{{showModalStatus}}">
+    <view class="drawer_title">{{isAdd?"请输入学号":"请输入新分组名"}}</view>
+    <view class="drawer_content">
+      <input class="input_base" name="text" type="text" focus="true" bindblur="bindblur" bindinput="bindinput" bindconfirm="bindconfirm"></input>
+      <view class="txt_ps">Ps:{{isAdd?"单个分组内学号不能重复":"分组名不能重复"}}</view>
+    </view>
+    <view class="btn_ok" wx:if="{{isAdd}}" catchtap="addStu" data-statu="ok">确定</view>
+    <view class="btn_ok" wx:if="{{!isAdd}}" catchtap="groupChange" data-statu="ok">确定</view>
+  </view>
+</template>

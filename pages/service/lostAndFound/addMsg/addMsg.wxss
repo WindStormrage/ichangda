@@ -1,0 +1,69 @@
+.card{
+    margin: 30rpx 20rpx;
+    box-shadow: 0px 0px 10px #666;
+}
+.cell{
+    padding: 20rpx 30rpx;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.cell .prompt{
+  font-size: 25rpx;
+  padding-left: 20rpx;
+  padding-top: 25rpx;
+}
+.cell::after{
+    content: " ";
+    height: 2rpx;
+    width: calc(100% - 59rpx);
+    position: absolute;
+    bottom: 0;
+    border-bottom: 2rpx solid #d9d9d9;
+    color: #d9d9d9;
+}
+.title{
+    width: 30%;
+    color: #1296db;
+}
+.content{
+    width: 70%;
+    margin-left: 30rpx;
+    word-wrap:break-word;/* 强制换行 */
+    word-break:break-all;
+    overflow: hidden;
+    margin-left: 50rpx;
+}
+.radio{
+    margin-right: 50rpx;
+}
+.content0{
+    margin-left: 80rpx;
+}
+.content1{
+    margin-left: 200rpx;
+}
+.all_title{
+    font-family: Microsoft YaHei;
+    font-size: 50rpx;
+    color: #1296db;
+}
+
+.uploadfile{
+    width: 100rpx;
+    height: 100rpx;
+    margin-top: 20rpx;
+    margin-left: 20rpx;
+    margin-bottom: 20rpx;
+}
+.up{
+    width: 100%;
+}
+button{
+    margin-top: 30rpx;
+    margin-left: 225rpx;
+    background-color: #1296db;
+    width: 300rpx;
+    color: #fff;
+}

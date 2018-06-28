@@ -1,0 +1,85 @@
+page {
+  background-color: #ececec;
+}
+.not image{
+  height: 288rpx;
+  width: 363rpx;
+  display: block;
+  margin: 0 auto;
+  margin-top: 200rpx;
+  margin-bottom: 100rpx;
+}
+.line{
+  width: 90%;
+  height: 1rpx;
+  background-color: #aaa;
+  margin: 0 auto;
+  margin-top: 50rpx;
+}
+.not .wa{
+  font-size: 50rpx;
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 50rpx;
+  font-weight: bold;
+  color: #666;
+}
+.container{
+  margin-bottom: 30rpx;
+}
+.c-container {
+  display: flex;
+  flex-direction: row;
+  width: 702rpx;
+  height: 211rpx;
+  border-radius: 20rpx;
+  margin-top: 31rpx;
+  margin-left: 24rpx;
+}
+
+.left {
+  margin-top: 36rpx;
+  margin-left: 50rpx;
+}
+
+.c-img {
+  display: flex;
+  flex-direction: row;
+  width: 200rpx;
+  height: 44rpx;
+}
+
+.circle {
+  width: 48rpx;
+  height: 48rpx;
+  margin-right: 15rpx;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.c-img-img {
+  width: 30rpx;
+  height: 27rpx;
+}
+
+.c-text {
+  margin-top: 26rpx;
+  font-size: 48rpx;
+  color: #fff;
+}
+
+.mine {
+  width: 102rpx;
+  height: 95rpx;
+  margin-left: 303rpx;
+  margin-top: 58rpx;
+}
+.msg{
+  font-size: 40rpx;
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 50rpx auto;
+  color: #999;
+}

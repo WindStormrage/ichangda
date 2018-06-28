@@ -1,0 +1,28 @@
+<view>
+    <view class="head">
+        <image src='{{info.pic}}'></image>
+        <text>Tips：{{info.tips}}</text>
+    </view>
+    <view class="title">— 点歌台 · 第{{info.phase}}期 —</view>
+    <view class='list'>
+        <view class="card" wx:for="{{list}}" >
+            <view data-item="{{item.id + ',' + index}}" bindtap="showDetail">
+                <view class="header">
+                  <image src='{{item.pictrue}}'></image>
+                </view>
+                <view class="content">
+                    <view class="card-title">
+                        <view class="song-title">《{{item.musicname}}》</view>
+                        <view class="songer">{{item.songer}}</view>
+                        <view class="agree" data-item="{{item.id + ',' + index}}" catchtap="dianZan">{{item.zan}}
+                            <image wx:if="{{item.isZan}}" src="../../../../images/heart1.png"></image>
+                            <image wx:else src="../../../../images/heart2.png"></image>
+                        </view>
+                    </view>
+                    <view class="text">{{item.reason}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="button" bindtap="diange">我 要 点 歌</view>
+</view>

@@ -1,0 +1,41 @@
+.page {
+  padding-left: 67rpx;
+  padding-right: 68rpx;
+  color: #515151;
+  font-size: 29rpx;
+}
+
+.input, .section{
+  margin-top: 50rpx;
+}
+
+.input text, .section, .title{
+  font-size: 35rpx;
+}
+.picker, .content{
+  margin-top: 15rpx;
+}
+.input input {
+  margin-top: 15rpx;
+  border-bottom: 1rpx solid #515151;
+}
+.button {
+  background-color: #00b1f7;
+  color: #fff;
+  text-align: center;
+  height: 63rpx;
+  width: 468rpx;
+  border-radius: 30rpx;
+  line-height: 63rpx;
+  margin: 0 auto;
+  margin-top: 119rpx;
+  font-size: 30rpx;
+}
+
+.uploadfile{
+    width: 375rpx;
+    height: 172rpx;
+    margin-top: 20rpx;
+    margin-left: 20rpx;
+    margin-bottom: 20rpx;
+}

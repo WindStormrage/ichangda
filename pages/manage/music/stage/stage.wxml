@@ -1,0 +1,30 @@
+<view class="page">
+    <view class="input">
+        <text>期数(中文大写)</text>
+        <input type="text" maxlength="20" bindinput="input1"/>
+    </view>
+    <view class="input">
+        <text>Tips</text>
+        <input type="text" maxlength="20" bindinput="input2"/>
+    </view>
+    <view class="section">
+      <view class="section__title">截止日期</view>
+      <picker mode="date" value="{{date}}" start="2017-09-01" end="2020-09-01" bindchange="bindDateChange">
+        <view class="picker">
+          {{date}}
+        </view>
+      </picker>
+    </view>
+
+    <view class="input">
+      <view class="title">图片上传(比例为 750:344)</view>
+      <view class="content" style="display:flex;flex-direction:row;">
+        <view wx:for="{{uploadImageList}}">
+          <image class="uploadfile" bindtap="onClickImage" src="{{uploadImageList[index]}}" id="{{index}}"></image>
+        </view>
+        <image wx:if="{{uploadImageList.length < 1}}" class="uploadfile" bindtap="addImage" mode="aspectFit" src="/images/upload_icon.png"></image>
+      </view>
+    </view>
+
+    <button class="button" bindtap="submit">提 交</button>
+</view>

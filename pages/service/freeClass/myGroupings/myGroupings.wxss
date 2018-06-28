@@ -1,0 +1,80 @@
+@import "../save-template/save-template.wxss";
+
+.head {
+  position: relative;
+  height: 56rpx;
+  line-height: 56rpx;
+  padding-top: 30rpx;
+  padding-bottom: 20rpx;
+  font-size: 40rpx;
+}
+
+.headText {
+  font-family: '黑体';
+  margin-left: 15rpx;
+  display: inline-block;
+  vertical-align: top;
+  height: 56rpx;
+}
+
+.settingText {
+  display: inline-block;
+  vertical-align: top;
+  position: absolute;
+  right: 62rpx;
+  color: #1296db;
+}
+
+.settingImg {
+  width: 45rpx;
+  height: 45rpx;
+  position: absolute;
+  right: 24rpx;
+  top: 38rpx;
+}
+
+.line {
+  width: 90%;
+  margin-left: 5%;
+  height: 2rpx;
+  background: #eee;
+}
+
+.groupNamIn {
+  background-color: #f2f2f2;
+  height: 80rpx;
+  width: 100%;
+  margin-top: 10rpx;
+  display: flex;
+  flex-direction: row;
+  border-radius: 15px;
+}
+
+.groupNamIn input {
+  display: inline-block;
+  height: 100%;
+  width: 600rpx;
+  padding-left: 30rpx;
+  font-size: 28rpx;
+}
+
+.placeholder {
+  font-size: 14px;
+  color: #d1d1d1;
+  margin-left: 20rpx;
+}
+
+.groupImg {
+  width: 30rpx;
+  height: 30rpx;
+  display: inline-block;
+  margin: auto;
+}
+
+.showClass {
+  width: 120rpx;
+  height: 120rpx;
+  position: fixed;
+  right: 84rpx;
+  bottom: 85rpx;
+}

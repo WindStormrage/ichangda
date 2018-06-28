@@ -1,0 +1,85 @@
+
+page{
+    background-color: #19B4EC;
+}
+.banner{
+    color: #fff;
+    font-size: 30rpx;
+    display: flex;
+    justify-content: center;
+}
+.banner text{
+    margin: 0 20rpx;
+}
+
+
+.head{
+    width: 100%;
+    text-align: center;
+    margin-top: 30rpx;
+}
+.head .title{
+    font-size: 50rpx;
+    font-weight: bold;
+    color: #fff143;
+    letter-spacing: 0.3rem;
+}
+.head text{
+    display: block;
+    margin-top: 10rpx;
+    margin-bottom: -20rpx;
+    font-size: 30rpx;
+    color: #ddd;
+    letter-spacing: 0.1rem;
+}
+.head .sao{
+    height: 100rpx;
+    width: 100rpx;
+    position: absolute;
+    top: 100rpx;
+    right: 40rpx;
+}
+.sao-in{
+    position: absolute;
+    top: 198rpx;
+    right: 35rpx;    
+}
+.body{
+    margin-top: 40rpx;
+}
+.scroll{
+    white-space: nowrap;
+    display: flex;
+    overflow: scroll;
+}
+.card{
+    margin: 10rpx;
+    width: 200px;
+    height: 300px;
+    display: inline-block;
+    border-radius: 20rpx;
+    box-shadow: 0rpx 0rpx 20rpx #ccc;
+    overflow: hidden;
+}
+.card image{
+    height: 100%;
+    width: 100%;
+}
+.foot .msg{
+    margin-top: 15rpx;
+    text-align: center;
+    font-size: 50rpx;
+    color: #fff;
+}
+.foot .time{
+    margin-top: 10rpx;
+    text-align: center;
+    font-size: 50rpx;
+    font-weight: bold;
+    color: #fff;
+}
+.rule{
+    margin-top: 15rpx;
+    text-align: center;
+    color: #fff;
+}

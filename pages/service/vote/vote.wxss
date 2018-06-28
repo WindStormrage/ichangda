@@ -1,0 +1,71 @@
+.base_info {
+  width: 750rpx;
+}
+
+.base_info .title {
+  margin: 30rpx 0rpx 0rpx 20rpx;
+  font-family: '黑体';
+  font-size: 20px;
+}
+
+.base_info .createDate {
+  margin: 0rpx 0rpx 0rpx 25rpx;
+  font-size: 12px;
+  color: #747474;
+}
+
+.base_info image {
+  width: 750rpx;
+  height: 375rpx;
+}
+
+.content{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 50rpx;
+  padding-bottom: 50rpx;
+}
+.card{
+  display: inline-block;
+  height: 370rpx;
+  width: 340rpx;
+  background-color: #1296db;
+  margin-bottom: 70rpx;
+  margin-top: 50rpx;
+  margin-left:20rpx;
+  box-shadow: 0 0 10rpx #666;
+}
+/* .card:nth-child(2n-1){
+  margin-left: 0;
+} */
+.card .img{
+  width: 340rpx;
+  height: 250rpx;
+  background-color: #FFF;
+}
+.card .img image{
+  width: 340rpx;
+  height: 250rpx;
+}
+.card .mane{
+  margin-top: 20rpx;
+  height: 100rpx;
+  width: 340rpx;
+  position: relative;
+  bottom: 0rpx;
+  text-align: center;
+  color: #fff;
+  font-size: 30rpx;
+  word-wrap:break-word;/* 强制换行 */
+}
+.card .button{
+  font-size: 30rpx;
+  height: 65rpx;
+  width: 250rpx;
+  background-color: #2ECC71;
+  text-align: center;
+  position: relative;
+  bottom: -20rpx;
+  line-height: 65rpx;
+}

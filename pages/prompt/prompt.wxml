@@ -1,0 +1,6 @@
+<view class="page">
+    <view class="title">通知</view>
+    <view class="content">各位用户，您好。因近期进行系统后台升级，将会造成部分外网用户不能正常使用课表、教室查询等数据服务功能，给您造成不便，十分抱歉，望您谅解。感谢您对我们的理解和支持。</view>
+    <view class="time">2017-10-12</view>
+    <view class="name">长沙学院技术研发部</view>  
+</view>

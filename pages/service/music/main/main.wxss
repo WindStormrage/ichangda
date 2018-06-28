@@ -1,0 +1,103 @@
+.page{
+}
+.head{
+    width: 100%;
+    background-color: #666;
+    height: 344rpx;
+    font-size: 29rpx;
+    overflow: hidden;
+}
+.head image{
+  height: 100%;
+  width: 100%;
+}
+.head text{
+    position: absolute;
+    top: 288rpx;
+    right: 10rpx;
+    color: #fff;
+    letter-spacing: 3rpx;
+}
+.title{
+    height: 95rpx;
+    width: 100%;
+    font-size: 48rpx;
+    text-align: center;
+    line-height: 95rpx;
+    letter-spacing: 3rpx;
+}
+.list{
+  height:626rpx;
+  overflow: scroll;
+}
+.card:first-child{
+    margin-top: 0rpx;
+}
+.card{
+    margin-top: 25rpx;
+}
+.header{
+    display: inline-block;
+    height: 133rpx;
+    width: 133rpx;
+    border-radius: 50%;
+    margin-left: 50rpx;
+    vertical-align:middle;
+    overflow: hidden;
+}
+.header image{
+  height: 100%;
+  width: 100%;
+}
+.content{
+    display: inline-block;
+    width: 482rpx;
+    margin-left: 40rpx;
+    vertical-align:middle;
+}
+.card-title{
+    display: flex;
+    position: relative;
+}
+.song-title{
+    font-size: 29rpx;
+}
+.songer{
+    font-size: 23rpx;
+    color: #666;
+    margin-top: 8rpx;
+}
+.agree{
+    position: absolute;
+    right: 0rpx;
+    top: 7rpx;
+    font-size: 25rpx;
+}
+.agree image{
+    height: 22rpx;
+    width: 25rpx;
+    padding-top: 0rpx;
+    vertical-align: middle;
+}
+.text{
+    margin-right: 30rpx;
+    font-size: 22rpx;
+    color: #666;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+.button{
+    height: 54rpx;
+    width: 407rpx;
+    background-color: #00B1F7;
+    border-radius: 27rpx;
+    text-align: center;
+    color: #fff;
+    line-height: 54rpx;
+    font-size: 29rpx;
+    margin: 0 auto;
+    margin-top: 35rpx;
+    letter-spacing: 5rpx;
+}

@@ -1,0 +1,28 @@
+<view class="page" id="page_grade">
+  <view class="weui-cells" style="margin-top:0px;">
+    <view class="weui-cell weui-cell_select">
+      <view class="weui-cell__hd weui-cell__hd_in-select-after">
+        <view class="weui-label"> 学年学期：</view>
+      </view>
+      <view class="weui-cell__bd">
+        <picker bindchange="onSelectChange" value="{{index}}" range="{{xnxqs}}">
+          <view class="weui-select weui-select_in-select-after">{{xnxqs[index]}}</view>
+        </picker>
+      </view>
+    </view>
+    <view style="font-size:24rpx;">
+      <block wx:for="{{grade}}">
+        <view class="weui-cell">
+          <view class="weui-cell__hd" style="margin-right:15rpx;">{{index + 1}}</view>
+          <view wx:if="{{item.property == '正常'}}" class="weui-cell__bd">{{item.coursename}}</view>
+          <view wx:else class="weui-cell__bd">{{item.coursename}}[补考]</view>
+          <view wx:if="{{item.score == '优秀' || item.score >= 90}}" class="weui-cell__ft" style="color:#007fff">{{item.score}}</view>
+          <view wx:elif="{{item.score == '良好' || item.score >= 80}}" class="weui-cell__ft" style="color:#67b842">{{item.score}}</view>
+          <view wx:elif="{{item.score == '中等' || item.score >= 70}}" class="weui-cell__ft" style="color:#cdd541">{{item.score}}</view>
+          <view wx:elif="{{item.score == '及格' || item.score >= 60}}" class="weui-cell__ft" style="color:#ffa500">{{item.score}}</view>
+          <view wx:elif="{{item.score == '不及格' || item.score < 60}}" class="weui-cell__ft" style="color:#ff0000">{{item.score}}</view>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>

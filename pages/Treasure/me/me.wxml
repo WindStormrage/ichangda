@@ -1,0 +1,26 @@
+<view>
+    <viwe class="banner">
+        <text bindtap="toList">线索列表</text>
+        <text>我的微寻卡</text>
+        <text bindtap="toPai">全校排行</text>
+    </viwe>
+    <view class="head">
+        <view class="title">我的微寻卡</view>
+        <text>收集的越多奖品越丰富</text>
+        <text>活动结束后可进行兑奖</text>
+        <image wx:if="{{num!=6}}" class="sao" src="../../../images/saoma2.png" bindtap="sao"></image>
+        <text wx:if="{{num!=6}}" class="sao-in" style='color: #fff; font-size: 25rpx;'>扫码入口</text>
+    </view>
+    <view class="body">
+        <scroll-view class="scroll" scroll-x="true">
+          <view class="card" wx:for="{{6}}">
+              <image bindtap="toList" src="http://ccsu.notobject.com/ichangda/uploads/menu/card{{index+1}}-1.jpg" style="filter:{{index>=num?aa:bb}};"></image>
+          </view>
+        </scroll-view>
+    </view>
+    <view class="foot">
+        <view class="msg">留给你寻宝的时间不多了</view>
+        <view class="time">{{date.d}} : {{date.h}} : {{date.m}} : {{date.s}}</view>
+    </view>
+    <view class="rule" bindtap="rule">查看规则与奖品></view>
+</view>

@@ -1,0 +1,86 @@
+page {
+  background-color: #fff;
+  height: 100%;
+  overflow: scroll;
+}
+
+.page {
+  background-color: #fff;
+  background-image: linear-gradient(to top, #fff, #19b4ec);
+  height: 100%;
+  padding: 20rpx 50rpx;
+}
+
+.conf {
+  width: 100%;
+  text-align: center;
+}
+
+.msg {
+  font-size: 30rpx;
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 10rpx auto;
+  color: #eee;
+}
+
+.all, .fraction {
+  margin-top: 10rpx;
+  display: inline-block;
+  color: #fff;
+}
+
+.fraction {
+  margin-left: 130rpx;
+}
+
+.title {
+  text-align: center;
+  font-size: 40rpx;
+}
+
+.title_content {
+  padding: 30rpx;
+  font-size: 30rpx;
+  min-width: 60rpx;
+}
+
+image {
+  height: 20rpx;
+  margin-top: 20rpx;
+}
+
+.option {
+  margin-top: 60rpx;
+  color: #666;
+}
+
+.option view {
+  margin: 0 auto;
+  margin-top: 30rpx;
+  line-height: 90rpx;
+  text-align: center;
+  min-height: 90rpx;
+  width: 630rpx;
+  border: 7rpx solid #19b4ec;
+  border-radius: 20rpx;
+}
+
+.bottun {
+  height: 80rpx;
+  width: 100%;
+  margin-bottom: 10rpx;
+}
+
+.next, .finnish {
+  height: 80rpx;
+  width: 300rpx;
+  color: #19b4ec;
+  border: 7rpx solid #19b4ec;
+  border-radius: 20rpx;
+  line-height: 80rpx;
+  text-align: center;
+  float: right;
+  margin-top: 50rpx;
+}

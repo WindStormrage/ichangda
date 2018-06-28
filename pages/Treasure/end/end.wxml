@@ -1,0 +1,7 @@
+<view class="container">
+    <image class='flag-img' src='/images/flag.png'></image>
+    <image class='end' src='/images/end.png'></image>
+    <image class='come-img' src='/images/come.png'></image>
+    <image class='thanks-img' src='/images/thank-you.png'></image>
+    <image class='ccsu-img' src='/images/ccsu.png'></image>
+</view>

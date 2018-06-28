@@ -1,0 +1,30 @@
+<import src="../stuNoInput-template/stuNoInput-template.wxml" />
+
+<view class='container'>
+  <view class='input-text'>请输入学号：</view>
+  <view class="line"></view>
+  <form bindsubmit='newGroup' data-statu="open" bindreset='formReset'>
+    <scroll-view scroll-y="true" class="scroll-contarner">
+      <view wx:for="{{personNum}}" wx:key="unique" class='seek'>
+        <template is="stuNoInputTemplate" data="{{index}}" />
+      </view>
+    </scroll-view>
+    <view class='addOne'>
+      <image bindtap="addOne" src='../../../../images/add.png' class="addOneImg"></image>
+    </view>
+    <view class="btn-area">
+      <button formType="submit">新建分组</button>
+      <button formType="reset">重置</button>
+    </view>
+  </form>
+</view>
+
+<view class="drawer_screen" catchtap="newGroup" data-statu="close" wx:if="{{showModalStatus}}"></view>
+<view animation="{{animationData}}" class="drawer_box" wx:if="{{showModalStatus}}">
+  <view class="drawer_title">请输入新分组名</view>
+  <view class="drawer_content">
+    <input class="input_base" name="text" type="text" focus="true" bindblur="bindblur" bindinput="bindinput" bindconfirm="bindconfirm"></input>
+    <view class="txt_ps">Ps:不能为空!</view>
+  </view>
+  <view class="btn_ok" catchtap="newGroup" data-statu="ok">确定</view>
+</view>

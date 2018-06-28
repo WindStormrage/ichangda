@@ -1,0 +1,28 @@
+
+<!--投票的基本信息-->
+<view class="base_info">
+  <view class="title">{{voteInfo.title}}</view>
+  <view class="createDate">{{voteInfo.createdate}}</view>
+
+  <!--<view class="endDate">截止日期:{{voteInfo.endDate}}</view>-->
+  <image src="{{voteInfo.image}}"></image>
+</view>
+<view class="content">
+  <block wx:for="{{voteItems}}" wx:for-item="voteItem">
+    <view class="card">
+      <view class="img">
+        <image src="{{voteItem.image}}"></image>
+      </view>
+      <view class="mane">{{voteItem.index}}.{{voteItem.title}}</view>
+
+      <!--若用户已投票,显示对应的票数及占比-->
+      <view wx:if="{{userVote != null}}">
+        <button class="button" disabled>{{votes[index]}}票 {{userVote.voteid == voteItem.id ? '[已投]':''}}</button>
+        <!--{{weightArr[index]}}%  占总比重-->
+      </view>
+      <view wx:else>
+        <button class="button" bindtap="onVoteClick" data-itemid="{{voteItem.id}}">投TA</button>
+      </view>
+    </view>
+  </block>
+</view>

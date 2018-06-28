@@ -1,0 +1,22 @@
+<view class="header flex" style="background-image: url('https://ccsu.notobject.com/ichangda/images/changda.jpg')">
+</view>
+
+<view class="update-l">
+  <image class="pic-up" src="/images/about_ccsu.png"/>
+  <view class="update-name">i长大</view>
+  <view class="update-ver">当前版本：V1.5.4</view>
+</view>
+<view class="divide"></view>
+<!--<view class="abstract">简介</view>-->
+<view class="content-a">i长大是一款小程序,有别于公众号的一种全新的连接用户与服务的方式,无需下载与安装即可在微信内被便捷地获取和传播,同时具有出色的使用体验。</view>
+<view class="content-a">碎片化、一站式、一体化的校园移动门户,适用于学生和教师,集课表、成绩、空教室、失物招领、微图书馆、评教、校园卡、校园地图、阳光平台等众多校园服务功能于一身。</view>
+<view class="content-a">i长大由“长沙学院新媒体运营中心技术部”独立设计开发，所有教务数据均来源于长沙学院教务系统，如两者数据之间有冲突，以长沙学院教务系统为准。</view>
+<view class="content-a">用户体验计划反馈&建议QQ群：<text style="color:#1296db" bindtap="copy">109974529</text></view>
+<view class="footer-c" bindtap='free'>i长大，爱长大！更多精彩，敬请期待！</view>
+
+<view class="weui-footer">
+  <view class="weui-footer__links">
+    <view class="weui-footer__text">新媒体运营中心</view>
+  </view>
+  <view class="weui-footer__text" bindtap='bingo'>Copyright 2014-2017 ichangda</view>
+</view>

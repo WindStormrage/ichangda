@@ -1,0 +1,43 @@
+.page{
+    padding-left: 67rpx;
+    padding-right: 68rpx;
+    color: #515151;
+    font-size: 29rpx;
+}
+.input{
+    margin-top: 50rpx
+}
+.input input{
+    border-bottom: 1rpx solid #515151;
+}
+.button{
+    background-color: #00B1F7;
+    color: #fff;
+    text-align: center;
+    height: 63rpx;
+    width: 468rpx;
+    border-radius: 30rpx;
+    line-height: 63rpx;
+    margin: 0 auto;
+    margin-top: 119rpx;
+    font-size: 30rpx;
+}
+.type{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 50rpx
+}
+.type .name{
+    width: 130rpx;
+}
+.type .var{
+}
+.radio-group{
+    display: flex;
+    flex-wrap: wrap;
+    width: 480rpx;
+}
+radio{
+    margin-left: 45rpx;
+    margin-bottom: 20rpx;
+}

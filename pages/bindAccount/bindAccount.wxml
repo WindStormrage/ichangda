@@ -1,0 +1,22 @@
+<view class="header">
+    <view class="header-img">
+        <image src="../../images/logo-login.png" mode="scaleToFill"></image>
+    </view>
+    <image class="img" src="../../images/login.png"></image>
+</view>
+<view class="bodyer">
+    <form bindsubmit="bind">
+        <view class="bodyer-input">
+            <view class="id">
+                <text class="text-id">学号</text>
+                <input id="account" name="account" bindfocus="onfocus" placeholder="{{accountHit}}" />
+            </view>
+            <view class="password">
+                <text class="text-password">密码</text>
+                <input id="password" name="password" password bindfocus="onfocus" placeholder="{{passwordHit}}" />
+            </view>
+            <text class="forget" bindtap='help'>帮助？</text>
+            <button form-type="submit" type="primary" class="login">绑定</button>
+        </view>
+    </form>
+</view>

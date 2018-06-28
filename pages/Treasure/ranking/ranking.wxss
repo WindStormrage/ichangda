@@ -1,0 +1,107 @@
+.rank {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 375rpx;
+  background-image: linear-gradient(to top, #71cdfa, #19b4ec);
+}
+
+.first, .second, .third {
+  display: flex;
+  flex-direction: column;
+  font-size: 35rpx;
+  color: #fff;
+  width: 153rpx;
+  height: 301rpx;
+  align-items: center;
+}
+
+.first-crown, .second-crown, .third-crown {
+  position: relative;
+  width: 142rpx;
+  height: 211rpx;
+  z-index: 2;
+}
+
+.rank-head {
+  position: relative;
+  border-radius: 50%;
+  width: 134rpx;
+  height: 131rpx;
+  margin-top: -151rpx;
+  margin-bottom: 13rpx;
+  z-index: 1;
+}
+
+.rank-name {
+  margin-top: 10rpx;
+  width: 180rpx;
+  text-align: center;
+}
+
+.rank-time {
+  font-size: 25rpx;
+  width: 180rpx;
+  text-align: center;
+}
+
+.first {
+  margin-top: 15rpx;
+  margin-left: 90rpx;
+}
+
+.second {
+  margin-top: 50rpx;
+  margin-left: 60rpx;
+}
+
+.third {
+  margin-top: 50rpx;
+  margin-left: 90rpx;
+}
+
+.persons {
+  background-color: #f4f4f4;
+  width: 100%;
+}
+
+.person {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 122rpx;
+  background-color: #fff;
+  margin-bottom: 6rpx;
+  align-items: center;
+}
+
+.p-rank {
+  margin-left: 18rpx;
+  font-size: 36rpx;
+  width: 60rpx;
+}
+
+.p-head {
+  margin-left: 5rpx;
+  width: 78rpx;
+  height: 78rpx;
+  border-radius: 50%;
+}
+
+.p-name {
+  margin-left: 35rpx;
+  width: 250rpx;
+}
+
+.p-time {
+  margin-left: 80rpx;
+  color: #f7701a;
+  width: 266rpx;
+}
+
+.rank-name, .rank-time, .p-name, .p-time, .p-rank {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
